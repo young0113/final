@@ -1,0 +1,17 @@
+<h1 align="center">Edit</h1><br/> 
+ 
+<div class="container"> 
+<form action="/posts/update/<%= @edit_post.id %>" method="POST"> 
+  <div class="form-group">
+    <label for="board_title">Title</label>
+    <input value="<%= @edit_post.title %>" name="my_title" type="title" class="form-control" placeholder="제목">
+ 
+  <div class="form-group">
+    <label for="exampleTextarea">Content</label>
+    <textarea name="my_content" class="form-control" id="exampleTextarea" rows="3"><%= @edit_post.content %></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">New</button>
+</form>
+  </div>
+

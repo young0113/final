@@ -1,0 +1,8 @@
+<h1 align="center"> List </h1><br/>
+
+<% @allpost.each do |p| %>
+    Title: <%= p.title %><br/> <a href="/posts/show/<%= p.id %>">Check</a>
+    <a href="/posts/edit/<%= p.id %>">Edit</a>  <a href="/posts/delete/<%= p.id %>">Delete</a> </br>
+    Content: <%= p.content %>
+<br/><hr/>
+<% end %>
